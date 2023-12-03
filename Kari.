@@ -1,0 +1,21 @@
+from flask import Flask, render_template
+
+app = Flask(__casata__)
+
+@app.route('/')
+def home():
+    return render_template('index.html')
+
+if __name__ == '__main__':
+    app.run(debug=True)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thor Clothing</title>
+</head>
+<body>
+    <h1>Welcome to Thor Clothing</h1>
+</body>
+</html>
